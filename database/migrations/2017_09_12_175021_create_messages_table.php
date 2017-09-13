@@ -18,7 +18,7 @@ class CreateMessagesTable extends Migration
             $table->string('sender');
             $table->string('subject');
             $table->text('message');
-            $table->timestamp('time_sent');
+            $table->timestamp('time_sent')->default(\DB::raw('CURRENT_TIMESTAMP'));
             $table->boolean('is_read')->default(0);
             $table->boolean('is_archived')->default(0);
         });
