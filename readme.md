@@ -30,3 +30,4 @@ All endpoints can be accessed using HTTP GET method. Request must have headers:
 3. If it’s more like email client and messages are private, message should have `receiver_id` field with User model id as value.
 4. Currently `api_token` for User is simple random string. It should be generated unique between all user.
 5. Would be go to add 'v1' prefix for endpoints. It would be easier to update API later.
+6. Change the way errors are displayed.
